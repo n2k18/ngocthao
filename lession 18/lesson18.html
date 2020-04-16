@@ -1,0 +1,935 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Photoshop Course - Lesson 18 - Animating GIF Images for the Web</title>
+</head>
+
+<body>
+
+<table border="1" style="border-collapse: collapse" width="100%" id="table1" cellspacing="0" cellpadding="10" bordercolorlight="#000000" bordercolordark="#000000">
+  <tr>
+    <td><font face="Arial">LESSON 18<br>
+    </font><font face="Arial" size="5">Animating GIF Images for the Web</font></td>
+    <td align="center" width="32">
+    <img border="0" src="../checkmk.gif" width="32" height="32"></td>
+  </tr>
+  <tr>
+    <td>
+    <ol>
+      <li><font face="Arial">On the desktop, go to the Lessons/Lesson18 folder and double-click the 
+    18End.html
+    file to open it in your default Web browser application.&nbsp;
+    The page includes four animated areas: the “Making Waves” text, the whale 
+    tail rising and
+    falling back into the ocean, the chemical formula for water moving into the 
+    image, and a
+    dolphin swimming along and releasing bubbles that pop into the air. (The 
+    text and
+    buttons are merely placeholders.)</font></li>
+      <li><font face="Arial">When you have finished viewing the file, quit the browser.</font></li>
+      <li><font face="Arial">Start Adobe 
+    ImageReady while holding down Ctrl+Alt+Shift (Windows) or
+    Command+Option+Shift (Mac OS) to restore the default preferences. </font>
+      </li>
+      <li><font face="Arial">As messages appear, select Yes to confirm that you want to reset 
+    preferences, No to defer
+    setting up your color monitor, and Close to close the Welcome Screen.</font></li>
+      </ol>
+      </td>
+    <td align="center" width="32"><font face="Arial">1</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Defining a workspace for animation tasks</b></font><p>
+    <font face="Arial">Before you start working on the file, you’ll define a new workspace 
+    especially for
+    animation work. Having the right workspace available at any time reduces 
+    screen clutter
+    and makes your task more efficient and more enjoyable.<br>
+    ImageReady offers a predefined Interactivity Palette Locations workspace, 
+    which you’re
+    already familiar with if you’ve done the previous ImageReady lessons. Since 
+    the interactivity
+    in this lesson is limited to animating, you can reduce the number of open 
+    palettes
+    even further, starting from the default workspace configuration.</font></p>
+    <ol>
+      <li><font face="Arial">Choose File &gt; Open, and select the Dolphin.psd file in the 
+    Lessons/Lesson18 folder.<br>(The art work for the animation has been completed for you, so you won’t 
+    need to enlarge
+    the image window or zoom in for the tasks in this lesson.)</font></li>
+      <li><font face="Arial">Close the Color, Web Content, and Slice palette groups.</font></li>
+      <li><font face="Arial">In the Info palette group, select the Layer Comps tab to bring it forward.</font></li>
+      <li><font face="Arial">Choose Window &gt; Animation to open the Animation palette. Drag the lower 
+    right
+    corner of the Animation palette to expand it so that you take advantage of 
+    available
+    horizontal space in the work area.<br>(Optional) You can also move the Animation palette closer to the image 
+    window, to keepelements in the work area close together.</font></li>
+      <li><font face="Arial">Choose Window &gt; Workspace &gt; Save Workspace.</font></li>
+      <li><font face="Arial">Type 18_Animation in the Save Workspace dialog box, and click OK.</font></li>
+    </ol>
+    <p><font face="Arial">Now you can quickly restore these palette sizes and positions by choosing 
+    Window &gt;
+    Workspace &gt; 18_Animation at any time.</font></td>
+    <td align="center" width="32"><font face="Arial">2</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Animating by hiding and showing layers<br>
+    </b>Perhaps the simplest way to create a two-step animation is by toggling 
+    the visibility of two
+    layers by changing the eye icons&nbsp; in the Layers palette. For example, you 
+    can make an
+    animated character alternate between different expressions or make an object 
+    move back
+    and forth in a simple pattern.<br>
+    The Dolphin.psd image file includes five layers, as you can see by examining 
+    the Layers
+    palette. You’ll do this kind of animation with the two Dolphin layers.</font></td>
+    <td align="center" width="32"><font face="Arial">-</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial">
+    <b>Preparing layer comps</b></font><p><font face="Arial">You worked with layer comps in Photoshop earlier in this book. 
+    ImageReady offers the
+    same capabilities, which can make animating much easier to do.</font></p>
+    <ol>
+      <li><font face="Arial">In the Layers palette, make sure that eye icons&nbsp; appear in the 
+    visibility boxes for the
+    Background and Dolphin 1 layers and that the visibility boxes for the other 
+    three layers
+    are empty.</font></li>
+      <li><font face="Arial">In the Layer Comps palette, click the Create New Layer Comp button 
+      .</font></li>
+      <li><font face="Arial">In the New Layer Comp dialog box, type Dolphin 1, and then make sure that 
+    Visibility
+    is selected (checked) before you click OK.<br>Now a new layer comp, Dolphin 1, appears in the Layer Comps palette.</font></li>
+      <li><font face="Arial">In the Layers palette, click to hide the eye icon for the Dolphin 1 
+    layer, and then click
+    to set an eye icon for the Dolphin 2 layer.</font></li>
+      <li><font face="Arial">Create a new layer comp, Dolphin 2, using the same techniques that you 
+    used in Steps 2
+    and 3, above.</font></li>
+      <li><font face="Arial">Click the box on the left of the Dolphin 1 layer comp to apply those 
+    visibility conditions
+    to the image. A badge&nbsp; appears in the box, indicating that this is the 
+    current layer
+    comp.</font></li>
+      </ol>
+      <p><font face="Arial">You now have two layer comps that you can use as starting points for the 
+    frames you’ll
+    create in the animation.</font></td>
+    <td align="center" width="32"><font face="Arial">3</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial">
+    <b>Beginning the animation process</b></font><p><font face="Arial">As you begin, only one frame, the default, appears in the Animation 
+    palette. This frame
+    shows the current visibility settings in the Layers palette, with only two 
+    layers visible:&nbsp;
+    Dolphin 1 and Background. The frame is selected (outlined with a border), 
+    indicating<br>
+    that you can change its content by editing the image.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, click the Duplicate Current Frame button&nbsp; to 
+    create
+    frame 2.</font></li>
+      <li><font face="Arial">In the Layer Comps palette, click the box to set 
+      the Apply This Layer Comp badge
+    for the Dolphin 2 layer comp. Notice that in the Layers palette, the Dolphin 
+    1 layer is now
+    hidden and the Dolphin 2 layer is visible.</font></li>
+      <li><font face="Arial">In the Animation palette, select frame 1. In the image window, the dolphin 
+    resumes its
+    original appearance, with only Layer 1 visible.</font></li>
+      <li><font face="Arial">Select frame 2 and then frame 1 repeatedly to manually animate the image.</font></li>
+      </ol>
+      </td>
+    <td align="center" width="32"><font face="Arial">4</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Navigating animation frames and previewing the animation</b></font><p>
+    <font face="Arial">You can use a number of techniques to preview and scroll through your 
+    animation
+    frames. Understanding the controls available on the Animation and Layers 
+    palettes is
+    essential to mastery of the animation process.&nbsp; You’ve already tried out animating the image manually by selecting each 
+    of the frames in
+    turn. In this procedure, you’ll try out several of the other ways you can 
+    preview an
+    animation in ImageReady. You’ll also preview the animation in a Web browser.<br>
+    Note: To use the Preview In command, you must have a browser application 
+    installed on your system. For more information, find </font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, make sure that Forever is selected in the 
+    Looping pop-up
+    menu in the lower left corner of the palette.</font></li>
+      <li><font face="Arial">Click the Select Previous Frame button&nbsp; to move to the other frame. 
+    (Try clicking
+    the button repeatedly in quick succession, and watch the manual playback of 
+    the
+    animation in the image window.)</font></li>
+      <li><font face="Arial">In the Layers palette, click the Backward or Forward button in the lower 
+    left corner of
+    the palette, and notice results similar to the previous step.<br>A. Layers palette Backward button<br>B. Layers palette Forward button</font></li>
+      <li><font face="Arial">Click the Play button&nbsp; in the Animation palette to preview the 
+    animation. The Play
+    button becomes the Stop button , which you can click to stop the 
+    playback.</font></li>
+      <li><font face="Arial">Choose File &gt; Preview In &gt; and choose a browser application on the Preview 
+    In
+    submenu. When you finish previewing the animation, quit the browser window 
+    and
+    return to Adobe ImageReady.<br>
+      [TIP] You can also do this step by pressing Ctrl+Alt+P (Windows) or 
+    Command+Option+P
+    (Mac OS) to launch a browser preview quickly, or clicking the browser button 
+    in the toolbox.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As.</font></li>
+      <li><font face="Arial">In the Save As dialog box, open the Lessons/Lesson18 folder and click the 
+    icon for
+    Create New Folder. Type My_GIFs to name the new folder, and then open it. 
+    Still in the
+    Save As dialog box, type Dolphin.gif as the file name, and click Save.</font></li>
+      </ol>
+      </td>
+    <td align="center" width="32"><font face="Arial">5</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Preparing layer copies for an animation</b></font><p>
+    <font face="Arial">Now you’ll begin to animate a different element in the dolphin image, 
+    adding to the
+    existing animation. In this procedure, you’ll use the same basic 
+    technique—hiding and
+    showing layers in different frames—to create your animation, but this time 
+    you’ll also
+    create the different layers by copying and transforming a single layer.<br>
+    Before adding layers to an image that already contains an animation, it’s a 
+    good idea to
+    create a new frame. This step helps protect your existing frames from 
+    unwanted changes. </font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, select frame 2 and click the Duplicate Current 
+    Frame button&nbsp; to create a new frame (frame 3) that is identical to frame 2. Leave 
+    frame 3 selected.</font></li>
+      <li><font face="Arial">Open the Animation palette menu and choose the New Layers Visible in 
+    All
+    States/Frames command to deselect it (remove the checkmark).</font></li>
+      <li><font face="Arial">In the Layers palette, select the Bubble layer and click the box for the 
+    eye icon&nbsp; to
+    make the layer visible. Leave the Bubble layer selected.&nbsp; <br>In the image window and in the frame 3 thumbnail, notice the bubble that 
+    appears above
+    the dolphin’s blow hole.</font></li>
+      <li><font face="Arial">Choose View &gt; Snap to deselect it so that no checkmark appears by this 
+    command.</font></li>
+      <li><font face="Arial">Select the Move tool&nbsp; in the toolbox.</font></li>
+      <li><font face="Arial">Hold down Alt (Windows) or Option (Mac OS) and drag the bubble up and to 
+    the
+    right in the image window. When you release the mouse button, two bubbles 
+    now appear
+    in the image, and a new layer, Bubble copy, appears in the Layers palette.</font></li>
+      <li><font face="Arial">Again hold down Alt (Windows) or Option (Mac OS) and drag to create a 
+    third
+    bubble, a little farther up and to the right of the second bubble.</font></li>
+    </ol>
+    <p><font face="Arial">You now have three bubble layers in the image window and the Layers 
+    palette: Bubble,
+    Bubble copy, and Bubble copy 2.</font></td>
+    <td align="center" width="32"><font face="Arial">6</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Transforming layers for an animation</b></font><p>
+    <font face="Arial">Now that you’ve prepared the duplicate bubble layers in the Dolphin.psd 
+    file, you’ll apply
+    a scale transformation to the two copies so that the bubble appears to grow 
+    as it trails
+    behind the swimming dolphin.</font></p>
+    <ol>
+      <li><font face="Arial">If the Move tool&nbsp; is not still selected, select it now, and then make 
+    sure that the
+    Layer Select tool&nbsp; is selected in the tool options bar.</font></li>
+      <li><font face="Arial">In the image window, select the middle bubble, the Bubble copy layer 
+    object.</font></li>
+      <li><font face="Arial">Choose Edit &gt; Transform &gt; Scale.<br>In the image window, the transformation bounding box appears around the 
+    Bubble copy
+    layer.</font></li>
+      <li><font face="Arial">In the tool options bar, select the Constrain Aspect Ration icon , and 
+    type 24 px for
+    width (W:). Click anywhere outside the width text box and notice that the 
+    bubble assumes
+    its new size but the transformation bounding box remains on the Bubble copy 
+    layer
+    object.</font></li>
+      <li><font face="Arial">Press Enter (Windows) or Return (Mac OS) to commit the transformation.</font></li>
+      <li><font face="Arial">Select the third bubble and repeat Steps 3–5, but this time type 26 px as 
+    either the width
+    or height dimension.</font></li>
+      <li><font face="Arial">Still using the Move tool and the Layer Select tool option, refine the 
+    locations of the
+    three bubble layers by dragging them in the image window, as needed.<br>Make sure that the third bubble does not extend beyond the tip of the 
+    dolphin’s dorsal fin
+    and that the three bubbles are nearly evenly spaced. Refer to the 
+    illustration below as a
+    suggestion.</font></li>
+      <li><font face="Arial">Choose File &gt; Save.</font></li>
+      </ol>
+      </td>
+    <td align="center" width="32"><font face="Arial">7</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating the simultaneous animations</b></font><p>
+    <font face="Arial">Now you’ll define the rising-bubble animation by successively hiding and 
+    showing the
+    layers of the Dolphin.psd file. You’ll combine this rising bubble with the 
+    swimming
+    dolphin animation by duplicating frames and coordinating settings in the 
+    Layers and
+    Animation palettes.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, make sure that frame 3 is selected, or select it 
+    now.</font></li>
+      <li><font face="Arial">In the Layers palette, click the visibility boxes to set or remove 
+    eye icons&nbsp; so that the
+    Background, Dolphin 1, and the original Bubble layer are visible and the 
+    other layers are
+    hidden.<br>Note: When you hide or show a layer in a frame, the visibility of the layer 
+    changes for that
+    frame only.</font></li>
+      <li><font face="Arial">In the Animation palette, click the Duplicate Current Frame button&nbsp; to 
+    create
+    frame 4. Leave frame 4 selected in the Animation palette.</font></li>
+      <li><font face="Arial">In the Layer Comps palette, select Dolphin 2. Then in the Layers palette, 
+    set an eye
+    icon&nbsp; for the Bubble Copy layer.</font></li>
+      <li><font face="Arial">Click the Duplicate Current Frame two more times, and then use the Layer 
+    Comps and
+    Layers palettes as follows:<br>• For frame 5, select the Dolphin 1 layer comp and make the Bubble Copy 2 
+    layer visible.<br>• For frame 6, select the Dolphin 2 layer comp and make the Pop layer 
+    visible.</font></li>
+      <li><font face="Arial">Select the Play button on the Animation palette to preview the results. 
+    When you
+    are finished, click the Stop button&nbsp; to stop the animation.</font></li>
+      </ol>
+      <p><font face="Arial">As the animation moves from frame to frame, the dolphin’s tail moves up and 
+    down with
+    each step. In each full cycle, the bubble emerges from the dolphin, rises, 
+    and pops in a
+    four-step sequence.<br>
+    If your results are different than described here, review the visibility 
+    settings on the Layers
+    palette for each successive frame and make any necessary corrections.</font></td>
+    <td align="center" width="32"><font face="Arial">8</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Setting and previewing the timing sequence</b></font><p>
+    <font face="Arial">Earlier, when you previewed your animation in the browser, you probably 
+    noticed that
+    the rate at which the dolphin is swimming is nothing short of frenetic. You 
+    can calm down
+    the motion by setting a delay between each frame in the animation. Then, 
+    you’ll play the<br>
+    animation again to review the speed of the apparent action.&nbsp; In your own projects, you can specify pauses for all frames or 
+    different pauses for various
+    individual frames in your animation. For this file, you’ll apply the same 
+    time delay
+    between each pair of frames in the complete animation.</font></p>
+    <ol>
+      <li><font face="Arial">From the Animation palette menu, choose Select All Frames.</font></li>
+      <li><font face="Arial">Click the time (0 seconds, which is the default) beneath any one of the 
+    frames to open
+    the Frame Delay pop-up menu, and choose 0.2 seconds.&nbsp;
+    The new value appears below each frame thumbnail, indicating that the time 
+    delay
+    applies to all the frames in the palette.</font></li>
+      <li><font face="Arial">Click the Play button&nbsp; in the Animation palette to view your animation, 
+    and then
+    click the Stop button&nbsp; when you’re ready to halt the animation.</font></li>
+      <li><font face="Arial">Choose File &gt; Preview In, and choose a browser application from the 
+    submenu to play
+    the animation with accurate timing. When you finish previewing, return to 
+    ImageReady.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As.</font></li>
+      <li><font face="Arial">In the Save As dialog box, make sure that the image is named Dolphin.gif 
+    and that the
+    location is inside your My_GIFs folder. Then click Save, and click Replace 
+    to replace the
+    existing file.<br>
+      The Save Optimized As command saves a file in the GIF, JPEG, or PNG 
+    format, for use inyour Web pages. GIF is the only format that supports animations, so that’s 
+    the format you
+    need for this project.</font></li>
+      <li><font face="Arial">Choose File &gt; Close to close your original image without saving changes.</font></li>
+    </ol>
+    <p><font face="Arial">You’ve finished your work on the dolphin animation for the Web-page project. 
+    Next,
+    you’ll continue with work on other animated elements for the project.</font></td>
+    <td align="center" width="32"><font face="Arial">9</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Opening the image file and starting the animation process</b></font><p>
+    <font face="Arial">To get started, you’ll open the new art file and review its current 
+    settings.</font></p>
+    <ol>
+      <li><font face="Arial">In ImageReady, choose File &gt; Open, and open the H2O.psd file from the
+    Lessons/Lesson18 folder on your hard disk.<br>The logo consists of four different components that reside on separate 
+    layers. You’ll
+    compose animation frames that show the characters of the logo appearing and 
+    moving
+    into their final position from different areas. The initial state reflects 
+    how you want the
+    image to appear at the end of the animation.</font></li>
+      <li><font face="Arial">Make sure that the Animation and Layers palettes are visible, or choose 
+    Window &gt;
+    Workspace &gt; 18_Animation to open them.</font></li>
+      <li><font face="Arial">In the Animation palette, click 
+    the Duplicate Current Frame button&nbsp; to create a new
+    animation frame.</font></li>
+      </ol>
+      <p><font face="Arial">Now that you have two frames, you’ve paved the way for a new animation. Your 
+    next tasks
+    will be to change the status of various layers for the different frames.</font></td>
+    <td align="center" width="32"><font face="Arial">10</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Setting layer positions and opacity</b></font><p>
+    <font face="Arial">In this part of the lesson, you’ll adjust the position and opacity of 
+    layers in an image to
+    create the starting and ending frames of an animation sequence. Changing the 
+    order in
+    which frames appear in the animation is as simple as dragging the thumbnails 
+    in the<br>
+    Animation palette.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, make sure that frame 2 is selected. Then, in the 
+    Layers palette,
+    select the H layer.</font></li>
+      <li><font face="Arial">Select the Move tool , hold down Shift (to constrain the 
+    movement), and drag the
+    “H” to the left side of the image window so that only a portion of the “H” 
+    is visible.</font></li>
+      <li><font face="Arial">In the Layers palette, select the O layer, and then hold down Shift and 
+    drag to a similar
+    position on the right side of image window.</font></li>
+      <li><font face="Arial">Repeat Step 3, but this time select the 2 layer and drag it to the upper 
+    edge of the image
+    window. The three layers should be arranged as shown in the illustration 
+    below.</font></li>
+      <li><font face="Arial">In the Layers palette, select the H layer and drag the Opacity slider to 
+    20%. Repeat this
+    process to reset the opacity of the 2 and O layers at 20% as well.<br>
+      In the Animation palette, notice that frame 2 has updated to reflect the 
+    current image
+    state. To make frame 2 the starting state of your animation, you’ll switch 
+    the order of the
+    two frames.</font></li>
+      <li><font face="Arial">In the Animation palette, drag frame 2 to the left, releasing the mouse 
+    when the black
+    bar appears to the left of frame 1.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">11</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Tweening the position and opacity of layers</b></font><p>
+    <font face="Arial">Next, you’ll add frames that represent transitional image states between 
+    the two existing
+    frames. When you change the position, opacity, or effects of any layer 
+    between two
+    animation frames, you can instruct ImageReady to tween, which automatically 
+    creates as<br>
+    many intermediate frames as you specify.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, make sure that frame 1 is selected; then choose Tween on the
+    Animation palette menu.</font></li>
+      <li><font face="Arial">In the Tween dialog box, set the following options (if they are not 
+    already selected):<br>• On the Tween With pop-up menu, select Next Frame.<br>• For Frames to Add, type 4.<br>• Under Layers, select All Layers.<br>• Under Parameters, select Position and Opacity, as needed, so that 
+    checkmarks appear
+    for those options. (You could select Effects if you were going to vary the 
+    settings of layer
+    effects evenly between the beginning and ending frames. You won’t choose 
+    this option<br>now because you have not applied any layer effects.)<br>• Click OK to close the dialog box.<br>ImageReady creates four new transitional frames, based on the opacity and 
+    position
+    settings of the layers in the original two frames.</font></li>
+      <li><font face="Arial">On the Looping pop-up menu in the lower left of the Animation palette, 
+    choose Once.<br>Note: In the sample End file for this lesson, the looping is configured 
+    slightly differently that
+    you’re asked to do here. In the End file, Forever is selected as the looping 
+    option but there is
+    also a long delay after the final frame of the animation, which is not yet 
+    created at this phase.</font></li>
+      <li><font face="Arial">In the Animation palette, click the Play button&nbsp; to preview your 
+    animation in
+    ImageReady.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">12</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>For the Web: Tweening frames<br>
+    </b>You use the Tween command to automatically add or modify a series of frames 
+    between two existing
+    frames—varying the layer attributes (position, opacity, or effect 
+    parameters) evenly between the new frames
+    to create the appearance of movement. For example, if you want to fade out a 
+    layer, set the opacity of the layer
+    in the starting frame to 100%; then set the opacity of the same layer in the 
+    ending frame to 0%. When you
+    tween between the two frames, the opacity of the layer is reduced evenly 
+    across the new frames.<br>
+    The term “tweening” is derived from “in betweening,” the traditional 
+    animation term used to describe
+    this process. Tweening significantly reduces the time required to create 
+    animation effects such as fading
+    in or fading out, or moving an element across a frame. You can edit tweened 
+    frames individually after you
+    create them.<br>
+    If you select a single frame, you choose whether to tween the frame with the 
+    previous frame or the next frame.<br>
+    If you select two contiguous frames, new frames are added between the 
+    frames. If you select more than two
+    frames, existing frames between the first and last selected frames are 
+    altered by the tweening operation. If you
+    select the first and last frames in an animation, these frames are treated 
+    as contiguous, and tweened frames
+    are added after the last frame. (This tweening method is useful when the 
+    animation is set to loop multiple
+    times.)<br>
+    Note: You cannot select discontiguous frames for tweening.</font></td>
+    <td align="center" width="32"><font face="Arial">-</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Animating a layer style</b></font><p>
+    <font face="Arial">When you tweened to create the four new frames in the 
+    previous procedure, you noticed the Effects check box in the Tween dialog 
+    box. In this procedure, you will animate a layer effect or layer style.<br>
+    The final result will be a little flash of light that appears and then 
+    disappears behind the 2 image.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, select frame 6, and then 
+      click the Duplicate Current Frame button to create a new frame with all 
+      the same settings as frame 6. Leave frame 7 selected.</font></li>
+      <li><font face="Arial">In the Layers palette, select the 2 layer, and then 
+      choose Outer Glow from the Layer Style pop-up menu at the bottom of the 
+      palette.<br>
+      Notice the subtle light halo around the edges of the 2 image.</font></li>
+      <li><font face="Arial">When the Layer Style dialog box opens, click OK to 
+      accept the default settings.</font></li>
+      <li><font face="Arial">Duplicate frame 7 by clicking the Duplicate Current 
+      Frame button .</font></li>
+      <li><font face="Arial">In the Layers palette, double-click the Outer Glow 
+      effect for the 2 layer to open the Layer Style dialog box. Make sure that 
+      the Preview check box is selected, and then specify the following options:<br>
+      • For Spread, drag the slider to 20%.<br>
+      • For Size, drag the slider to 49 pixels.</font></li>
+      <li><font face="Arial">Click OK, and then choose File &gt; Save.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">13</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Tweening frames for the layer-style changes</b></font><p>
+    <font face="Arial">As you’ve seen already in this lesson, the Tween feature 
+    can save you lots of time you might have spent doing tedious and exacting 
+    work. You’ll use the Tween command again now to animate the change in layer 
+    style.<br>
+    You’ll also complete the glow effect by duplicating one more frame and 
+    moving it to the end of the animation. The resulting animation gives the 
+    impression of a little “pop” of light behind the 2 image as it comes into 
+    place.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, select frame 7.</font></li>
+      <li><font face="Arial">Choose Tween from the Animation palette menu.</font></li>
+      <li><font face="Arial">In the Tween dialog box, specify the following 
+      options:<br>
+      • For Tween With, select Next Frame.<br>
+      • For Frames to Add, type 2.<br>
+      • Under Layers, select All Layers.<br>
+      • Under Parameters, select Effects.</font></li>
+      <li><font face="Arial">Click OK to close the dialog box.</font></li>
+      <li><font face="Arial">In the Animation palette, select frame 6, and then 
+      select the Duplicate Current Frame button&nbsp; to create a new frame 7, 
+      which will renumber the frames following 7.</font></li>
+      <li><font face="Arial">Drag the new frame 7 to the end of the Animation 
+      palette so that it is to the right of (after) frame 11.</font></li>
+      <li><font face="Arial">Choose File &gt; Save.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">14</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Preserving transparency and preparing to optimize</b></font><p>
+    <font face="Arial">Next, you’ll optimize the H2O image in GIF format with 
+    background transparency and preview your animation in a Web browser. 
+    Remember that only the GIF format supports animated images.<br>
+    We included the Backdrop layer in the H2O.psd file to make it easier to see 
+    the results as you work. That layer is not necessary for the final Web-page 
+    project because you’re going to optimize the file with a transparent 
+    background. Your first step, then, is to hide the<br>
+    Backdrop layer.</font></p>
+    <ol>
+      <li><font face="Arial">On the Animation palette menu, choose Select All 
+      Frames.</font></li>
+      <li><font face="Arial">On the Layers palette, click the eye icon&nbsp; for 
+      the Backdrop layer to hide it in all frames.</font></li>
+      <li><font face="Arial">On the Optimize palette, set the following options:<br>
+      • For the file format, choose GIF.<br>
+      • Under Color Table, choose Perceptual for Reduction and 256 for Colors.<br>
+      • Under Transparency, select the Transparency check box (to preserve the 
+      transparency of the original image).<br>
+      • For Matte, select the white swatch from the pop-up palette, if it is not 
+      already selected.</font></li>
+      <li><font face="Arial">With all frames still selected in the Animation 
+      palette, right-click (Windows) or Control-click (Mac OS) one of the frames 
+      in the Animation palette to open the Disposal Method context menu, and 
+      choose Restore to Background.</font></li>
+      <li><font face="Arial">With all frames selected, use the pop-up menu at 
+      the bottom of any one of the frame thumbnails and select 0.1 sec.</font></li>
+      <li><font face="Arial">On the Animation palette menu, choose Optimize 
+      Animation.</font></li>
+      <li><font face="Arial">In the Optimize Animation dialog box, make sure 
+      that both the Bounding Box and Redundant Pixel Removal check boxes are 
+      selected, and then click OK.</font></li>
+    </ol>
+    <p><font face="Arial">The disposal options—Restore to Background&nbsp; and 
+    Automatic—clear the selected frame before the next frame is played, 
+    eliminating the danger of displaying remnant pixels from the previous frame. 
+    The Do Not Dispose&nbsp; option retains the frames. The Automatic option is 
+    suitable for most animations. This option selects a disposal method based on 
+    the presence or absence of transparency in the next frame and discards the 
+    selected frame if the next frame contains layer transparency.</font></td>
+    <td align="center" width="32"><font face="Arial">15</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>For the Web: Setting the frame-disposal method<br>
+    </b>The frame-disposal method specifies whether to discard the current frame 
+    before displaying the next frame.<br>
+    You select a disposal method when working with animations that include 
+    background transparency in order to specify whether the current frame will 
+    appear through the transparent areas of the next frame.<br>
+    The Disposal Method icon indicates whether the frame is set to Do Not 
+    Dispose or Restore to Background.<br>
+    (No icon appears when the disposal method is set to Automatic.)<br>
+    • Choose the Automatic option to determine a disposal method for the current 
+    frame automatically, discarding the current frame if the next frame contains 
+    layer transparency. For most animations, the Automatic option yields the 
+    desired results and is, therefore, the default option.<br>
+    Note: Choose the Automatic disposal option when using the Redundant Pixel 
+    Removal optimization option, to enable ImageReady to preserve frames that 
+    include transparency.<br>
+    • Choose the Do Not Dispose option to preserve the current frame as the next 
+    frame is added to the display.<br>
+    The current frame (and preceding frames) may show through transparent areas 
+    of the next frame.<br>
+    To accurately preview an animation using the Do Not Dispose option, preview 
+    the animation in a browser.<br>
+    • Choose the Restore to Background option to discard the current frame from 
+    the display before the next frame is displayed. Only a single frame is 
+    displayed at any time (and the current frame will not appear through the 
+    transparent areas of the next frame).</font></td>
+    <td align="center" width="32"><font face="Arial">-</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Viewing the optimized GIF file</b></font><p>
+    <font face="Arial">You’ve almost completed your work in the H2O.psd file 
+    that you’ll use to save as an animated GIF image.</font></p>
+    <ol>
+      <li><font face="Arial">In the image window, click the Optimized tab.<br>
+      ImageReady rebuilds the image according to the options you entered.</font></li>
+      <li><font face="Arial">In the image window, click the 2-Up tab and compare 
+      the information for the original and optimized versions of the animated 
+      image.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As, name the image 
+      H2O.gif, select the My_GIFs folder, and click Save.<br>
+      If you want to preview your animation in the browser, you can do that now 
+      by clicking the Preview In Default Browser button in the toolbox. Then 
+      close the browser.</font></li>
+      <li><font face="Arial">In ImageReady, choose File &gt; Close to close the 
+      original file.</font></li>
+    </ol>
+    <p><font face="Arial">You have finished your work on the fly-in logo.</font></td>
+    <td align="center" width="32"><font face="Arial">16</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Using vector masks to create animations</b></font><p>
+    <font face="Arial">The rest of this lesson deals with masks, as they apply 
+    to animations. You’ll work on two separate projects with different types of 
+    masks, first vector masks and then layer masks. <br>
+    First, you’ll create the effect of an ocean wave rising and falling inside 
+    the characters of the word Waves. You’ll do this by creating a vector mask 
+    to partially block the Wave layer so that the ocean appears only inside the 
+    word, and then using position changes to define the different frames of the 
+    animation.</font></p>
+    <ol>
+      <li><font face="Arial">Choose File &gt; Open, and open the Waves.psd file 
+      from the Lessons/Lesson18 folder.</font></li>
+      <li><font face="Arial">In the Layers palette, make sure that all the 
+      layers are visible. If not, click the visibility boxes so that eye icons 
+      appear for each of the layers.</font></li>
+      <li><font face="Arial">In the Layers palette, select the Wave layer.</font></li>
+      <li><font face="Arial">Hold down Alt (Windows) or Option (Mac OS) and move 
+      the pointer (without clicking) over the solid line dividing the Wave and 
+      Text layers in the Layers palette until the pointer changes to two 
+      overlapping circles . Then click the dividing line between the layers to 
+      link the two layers together.&nbsp; Or, you can do the same thing by 
+      choosing Layer &gt; Group With Previous. </font></li>
+    </ol>
+    <p><font face="Arial">Notice that the waves now appear masked by the logo 
+    text. A downward-pointing arrow&nbsp; appears in front of the Wave layer 
+    name and thumbnail in the Layers palette, indicating that the layer is 
+    grouped with the layer below. </font></td>
+    <td align="center" width="32"><font face="Arial">17</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Animating position changes within a vector-mask 
+    layer</b></font><p><font face="Arial">Although the Wave and Text layers are 
+    linked, you can still make position changes to individual layers.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, click the Duplicate 
+      Current Frame button to create a new frame.</font></li>
+      <li><font face="Arial">If necessary, select frame 2 in the Animation 
+      palette. In the Layers palette, deselect the Text layer, leaving only the 
+      Wave layer selected.</font></li>
+      <li><font face="Arial">Select the Move tool&nbsp; in the toolbox.</font></li>
+      <li><font face="Arial">Hold down Shift (to constrain the movement) and 
+      drag the Wave layer in the image window, moving it down until the top of 
+      the wave image rests just above the top of the text. (As you drag, the 
+      entire Wave layer is ghosted so that you can see the position of the<br>
+      wave as you move it.)</font></li>
+      <li><font face="Arial">Click the Play button&nbsp; to play the animation. 
+      The wave moves up and down inside the logo. Click the Stop button&nbsp; to 
+      stop the animation.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">18</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Smoothing the wave action</b></font><p>
+    <font face="Arial">In order to make the wave action look a little more 
+    natural, you’ll use the now-familiar tweening feature to add more frames to 
+    the animation.<br>
+    Before you begin, make sure that frame 2 is selected in the Animation 
+    palette.</font></p>
+    <ol>
+      <li><font face="Arial">On the Animation palette menu, choose Tween to open 
+      the Tween dialog box, and then do the following:<br>
+      • For Frames To Add, type 2.<br>
+      • For Tween With, select Previous Frame.<br>
+      • Under Layers, select All Layers.<br>
+      • Under Parameters, select Position.<br>
+      • Click OK to close the dialog box.</font></li>
+      <li><font face="Arial">In the Animation palette, select Forever on the 
+      pop-up menu.</font></li>
+      <li><font face="Arial">Choose Select &gt; Deselect Layers, and then click the 
+      Play button&nbsp; in the Animation palette to preview the animation.When 
+      you’ve seen enough, click Stop. <br>
+      The animation is still bumpier than ideal, so you’ll fix that next using 
+      the same or similar techniques as ones you used with the previous two 
+      animations in this lesson.</font></li>
+      <li><font face="Arial">Select frame 2 and then Shift-click frame 3 to 
+      select both new frames. Then choose Copy Frames on the Animation palette 
+      menu.</font></li>
+      <li><font face="Arial">Select frame 4, and then choose Paste Frames on the 
+      Animation palette menu to open the Paste Frames dialog box, and select 
+      Paste After Selection. Then click OK.</font></li>
+      <li><font face="Arial">Click frame 5, so that it is the only frame 
+      selected, and drag it to the right, so that it becomes the last frame in 
+      the animation.</font></li>
+      <li><font face="Arial">With frame 6 selected, hold down Shift and click 
+      frame 1 to select all the frames, and then select 0.2 from the time delay 
+      pop-up for any one of the frames. Then choose File &gt; Save.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">19</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Previewing and saving the vector-mask animation</b></font><p>
+    <font face="Arial">Now, you’ll put your animation to the test by previewing 
+    it to see if the wave action meets your standards.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, click the Play button . 
+      When you are ready, click the Stop button&nbsp; to halt the animation.</font></li>
+      <li><font face="Arial">If necessary, make any adjustments to the delay or 
+      the order of the frames to correct errors or set the timing the way you 
+      want it to be.</font></li>
+      <li><font face="Arial">Preview the animation again and continue to make 
+      adjustments until you are fully satisfied with the results.</font></li>
+      <li><font face="Arial">(Optional) Select the Preview In Default Browser 
+      button in the toolbox, or choose File &gt; Preview In &gt; and select your 
+      preferred Web browser. When you finish, close the Web browser and return 
+      to ImageReady.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As, specify the 
+      My_GIFs folder location, and type Waves.gif to name the file. Then click 
+      Save.<br>
+      ImageReady saves the animation as a GIF file, using the current settings 
+      in the Optimize palette.</font></li>
+      <li><font face="Arial">Choose File &gt; Close to close the original file.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">20</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating and applying a layer mask</b></font><p>
+    <font face="Arial">In this task, you’ll create a layer mask based on the 
+    opacity differences of the gradient fill and then apply your mask to the 
+    whale tail. The gradient itself doesn’t play a role in your final image, but 
+    you’ll use the mask it can generate and apply it to a different layer.<br>
+    Before you begin, take a close look at the appearance of the whale-tail 
+    image in the image window so that you’ll be able to compare it to the 
+    results when you finish.</font></p>
+    <ol>
+      <li><font face="Arial">Choose File &gt; Open and open the Whale.psd file in 
+      the Lessons/Lesson18/ folder.</font></li>
+      <li><font face="Arial">In the Layers palette, click the visibility box for 
+      the Gradient layer to set an eye icon and make the layer visible.</font></li>
+      <li><font face="Arial">Select the Gradient layer and choose Layer &gt; Add 
+      Layer Mask &gt; From Transparency.<br>
+      Notice the new Layers palette thumbnail for the Gradient layer, showing 
+      the areas of transparency (white) and the areas of masking (black).</font></li>
+      <li><font face="Arial">Click the eye icon to hide the Gradient layer.</font></li>
+      <li><font face="Arial">Click the link icon&nbsp; between the two Gradient 
+      layer thumbnails to unlink the gradient and the mask so that you can use 
+      the mask apart from the Gradient layer.</font></li>
+      <li><font face="Arial">Select the mask thumbnail (on the right) and drag 
+      it to the Tail layer.</font></li>
+    </ol>
+    <p><font face="Arial">If you remember how the whale tail looked before you 
+    started making changes, you’ll see the difference now in the image window: 
+    The lower area of the tail fades gradually as it sinks into the water.</font></td>
+    <td align="center" width="32"><font face="Arial">21</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Animating an image within a layer mask</b></font><p>
+    <font face="Arial">The beauty of this technique is that although you change 
+    the layer object position, the mask stays in place. Here, you’ll start the 
+    next phase of the animation process by moving the image of the tail itself. 
+    As you do this, the gradient mask won’t change, so it will have<br>
+    the same effect on the visibility of the whale as it sinks and rises in and 
+    out of the water.</font></p>
+    <p><font face="Arial">1 In the Animation palette, click the Duplicate 
+    Current Frame button . Leave frame 2 selected.</font></p>
+    <p><font face="Arial">2 Select the Move tool , and make sure that Layer 
+    Selection&nbsp; is selected in the tool options bar.</font></p>
+    <p><font face="Arial">3 In the image window, drag the tail image down until 
+    it almost disappears below the surface of the water.</font></p>
+    <p><font face="Arial">4 In the Animation palette, drag frame 2 left, so that 
+    it becomes the new frame 1.<br>
+    All that remains to be done is to smooth out the action with intermediate 
+    frames and delays between frame changes. By now, you are probably familiar 
+    enough with these processes that you could do this on your own. But we’ve 
+    added an extra twist to this task that should make it worth the effort of 
+    stepping through the procedure.</font></p>
+    <ol>
+      <li><font face="Arial">In the Animation palette, make sure that frame 1 is 
+      selected, and then choose Tween on the Animation palette menu. Or, choose 
+      the Tween button at the bottom of the palette.</font></li>
+      <li><font face="Arial">In the Tween dialog box, select the Next Frame and 
+      type 3 for Frames To Add. Make sure that All Layers and Position are 
+      selected, and then click OK.</font></li>
+      <li><font face="Arial">In the Animation palette, Shift-click to select 
+      frames 2, 3, and 4.</font></li>
+      <li><font face="Arial">On the Animation palette menu, choose Copy Frames.</font></li>
+      <li><font face="Arial">Select frame 5. Then choose Paste Frames on the 
+      Animation palette menu.</font></li>
+      <li><font face="Arial">In the Paste Frames dialog box, select Paste After 
+      Selection, and click OK. Leave the three new frames selected.</font></li>
+      <li><font face="Arial">On the Animation palette menu, choose Reverse 
+      Frames.<br>
+      Now the frames show the whale tail rising and sinking in a smooth 
+      sequence.</font></li>
+      <li><font face="Arial">Select all eight frames and select 0.2 on the delay 
+      pop-up menu for one of the frames to set the timing for all frames.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">22</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Previewing and saving the layer-mask animation</b></font><p>
+    <font face="Arial">You’ve almost finished your final element for the 
+    Web-page project.</font></p>
+    <ol>
+      <li><font face="Arial">In the toolbox, select the Preview Document button&nbsp; 
+      to preview the animation, and then click the button again to stop it.<br>
+      Or, you can click the Play button and then the Stop button in the 
+      Animation palette.</font></li>
+      <li><font face="Arial">Choose File &gt; Preview In &gt; browser to select an 
+      available Web browser.</font></li>
+      <li><font face="Arial">When you finish previewing the animation, close the 
+      Web browser.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As.</font></li>
+      <li><font face="Arial">Select the My_GIFs folder and make sure that the 
+      name is Whale.gif. Then click OK.</font></li>
+      <li><font face="Arial">Close the Whale.psd file.</font></li>
+    </ol>
+    <p><font face="Arial">You’ve finished all four elements in the Web page 
+    project.<br>
+    If you want to test your images in the Web page you viewed at the beginning 
+    of this lesson, you can go to the desktop and drag contents of the My_GIFs 
+    folder into the Lessons/Lesson18/images folder to overwrite the GIF files 
+    inside. (Click Yes when messages appear asking you to confirm this action.) 
+    Then double-click the 18End.html.&nbsp; When the page opens in your default 
+    Web browser, it will utilize your GIF images rather than the samples 
+    provided for this lesson.</font></td>
+    <td align="center" width="32"><font face="Arial">23</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Review questions</b></font><ol>
+      <li><font face="Arial">Describe a simple way to create animation.</font></li>
+      <li><font face="Arial">In what instances can you tween animation frames? 
+      When can’t you tween frames?</font></li>
+      <li><font face="Arial">How do you optimize an animation?</font></li>
+      <li><font face="Arial">What does optimizing an animation accomplish?</font></li>
+      <li><font face="Arial">What is frame disposal? Which frame-disposal method 
+      should you generally use?</font></li>
+      <li><font face="Arial">How do you edit an existing animation frame?</font></li>
+      <li><font face="Arial">What file formats can you use for animations?</font></li>
+    </ol>
+    <p><font face="Arial"><b>Review answers</b></font></p>
+    <ol>
+      <li><font face="Arial">A simple way to create animation is to start with a 
+      layered Photoshop file. Use the Duplicate Current Frame button in the 
+      Animation palette to create a new frame, and then use the Layers palette 
+      to alter the position, opacity, or effects of one of the selected frames.<br>
+      Then, create intermediate frames between the selection and the new frame 
+      either manually, by using the Duplicate Current Frame button, or 
+      automatically, by using the Tween command.</font></li>
+      <li><font face="Arial">You can instruct Adobe ImageReady to tween 
+      intermediate frames between any two adjacent frames. Tweening can change 
+      layer opacity or position between two frames, or to add new layers to a 
+      sequence of frames. You cannot tween discontiguous frames.</font></li>
+      <li><font face="Arial">Click the Show Options button in the Optimize 
+      palette, and then choose File &gt; Save Optimized to optimize animations. 
+      Choose Optimize Animation from the Animation palette menu to perform 
+      optimization tasks specific to animation files, including removing 
+      redundant pixels and cropping frames according to the bounding box.</font></li>
+      <li><font face="Arial">When you optimize GIF files, ImageReady also 
+      generates an adaptive, perceptual, or selective palette for the file, 
+      based on all frames in the animation. ImageReady applies a special 
+      dithering technique to ensure that dither patterns are consistent across 
+      all frames, to prevent flickering during playback. The application also 
+      optimizes frames so that only areas that change from frame to frame are 
+      included, greatly reducing the file size of the animated GIF.</font></li>
+      <li><font face="Arial">A frame-disposal method specifies whether to 
+      discard the selected frame before displaying the next frame when an 
+      animation includes background transparency. This option determines whether 
+      the selected frame will appear through the transparent areas of the next 
+      frame. Generally, the Automatic option is suitable for most animations. 
+      This option selects a disposal method based on the presence or absence of 
+      transparency in the next frame, and discards the selected frame if the 
+      next frame contains layer transparency.</font></li>
+      <li><font face="Arial">To edit an existing animation frame, you first 
+      select the frame, either by clicking the frame thumbnail in the Animation 
+      palette or by navigating to the desired frame using the First Frame, 
+      Select Previous Frame, or Select Next Frame buttons in the Animation 
+      palette or Layers palette. Then, edit the layers in the image to update 
+      the contents of the selected frame.</font></li>
+      <li><font face="Arial">Files for animations must be saved in GIF format or 
+      as a QuickTime movie. You cannot create animations as JPEG or PNG files.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

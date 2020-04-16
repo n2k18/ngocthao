@@ -1,0 +1,691 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Photoshop Course - Lesson 17 - Creating Rollover Web Visuals</title>
+</head>
+
+<body>
+
+<table border="1" style="border-collapse: collapse" width="100%" id="table1" cellspacing="0" cellpadding="10" bordercolorlight="#000000" bordercolordark="#000000">
+  <tr>
+    <td><font face="Arial">LESSON 17<br>
+    </font><font face="Arial" size="5">Creating Rollover Web Visuals</font></td>
+    <td align="center" width="32">
+    <img border="0" src="../checkmk.gif" width="32" height="32"></td>
+  </tr>
+  <tr>
+    <td>
+    <ol>
+      <li><font face="Arial">On the desktop, locate the Lessons/Lesson17/17End 
+      folder and double-click the 17End.html file to open it in your default Web 
+      browser.</font></li>
+      <li><font face="Arial">Move the mouse pointer over the Web page, 
+      especially over the left side. Look for:<br>
+      • Changes in the appearance of the image.<br>
+      • Changes in the appearance of the pointer (from an arrow to a pointing 
+      hand).</font></li>
+      <li><font face="Arial">Click each of the menu buttons on the left side of 
+      the image, and notice the different reactions that occur on the page.<br>
+      Note: The page is not necessarily finished because no links are set up 
+      yet, so clicking these buttons will not open additional Web pages. 
+      However, some actions in these buttons (which are slices) do cause changes 
+      on this same page. For more on configuring slices to link to URLs for 
+      other Web pages, see Lesson 15, “Creating Links within an Image.”</font></li>
+      <li><font face="Arial">When you finish viewing the Web page, quit the Web 
+      browser.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">1</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Rollover states in ImageReady<br>
+    </b>ImageReady automatically assigns one of the following states to new 
+    rollovers you create.<br>
+    <b>Over</b> Activates the image when the user rolls over the slice or 
+    image-map area with the mouse while the mouse button is not pressed.<br>
+    <b>Down</b> Activates the image when the user presses the mouse button on 
+    the slice or image-map area. The state appears as long as the viewer keeps 
+    the mouse button pressed down on the area.<br>
+    <b>Click</b> Activates the image when the user clicks the mouse on the slice 
+    or image-map area. The state appears until the user moves the mouse out of 
+    the rollover area.<br>
+    Note: Different Web browsers, or different versions of a browser, may 
+    process clicks and double-clicks differently.<br>
+    <b>Custom</b> Activates the image of the specified name when the user 
+    performs the action defined in the corresponding JavaScript code. (You must 
+    create JavaScript code and add it to the HTML file for the Web page in order 
+    for the Custom rollover option to function. See a JavaScript manual for more 
+    information.)<br>
+    <b>None</b> Preserves the current state of the image for later use, but does 
+    not output an image when the file is saved as a Web page.<br>
+    <b>Selected</b> Activates the rollover state when the user clicks the mouse 
+    on the slice or image-map area. The state appears until the viewer activates 
+    another selected rollover state, and other rollover effects can occur while 
+    the selected state is active.<br>
+    <b>Out</b> Activates the image when the user rolls the mouse out of the 
+    slice or image-map area. (The Normal state usually serves this purpose.)<br>
+    <b>Up</b> Activates the image when the user releases the mouse button over 
+    the slice or image-map area.</font></td>
+    <td align="center" width="32"><font face="Arial">-</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Defining a workspace for this lesson</b></font><p>
+    <font face="Arial">If you’ve already completed other lessons in this book, 
+    it’s likely that you’ve had experience defining workspaces. ImageReady has 
+    several predefined workspaces that you can use for specific kinds of work, 
+    and you could certainly use one of those as a starting<br>
+    place for this lesson. But you can also create a specialized refinement of a 
+    predefined workspace and save it as a custom workspace, which is what you’ll 
+    do now.</font></p>
+    <ol>
+      <li><font face="Arial">Start Adobe ImageReady. If the palettes are not in 
+      the default locations, choose Window &gt; Workspace &gt; Default Palette 
+      Locations.</font></li>
+      <li><font face="Arial">Drag the Web Content palette group to the left of 
+      the Info palette, at the top of the work area.</font></li>
+      <li><font face="Arial">Click the close buttons to close the Info palette 
+      group and the Color palette group. Or, you can close them by selecting 
+      Info and Color on the View menu.</font></li>
+      <li><font face="Arial">Drag the Layers palette group to the upper right 
+      corner of the work area, next to the Web Content palette group (where the 
+      Info palette group was).</font></li>
+      <li><font face="Arial">In the Slices palette group, select the Table tab 
+      to bring it forward, and then click the double arrows&nbsp; on that tab to 
+      fully expand the palette. Then drag it to the lower right corner of the 
+      work area.</font></li>
+      <li><font face="Arial">Drag the lower right corners of the Web Content and 
+      Layers palettes so that they take full advantage of the available space 
+      below them.</font></li>
+      <li><font face="Arial">Choose Window &gt; Workspace &gt; Save Workspace, and 
+      name it 17_Rollovers in the Save Workspace dialog box.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">2</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Setting up work options for the lesson file</b></font><p>
+    <font face="Arial">Another important preparation for work is to make sure 
+    that the work settings for ImageReady are set up in the right way. Some of 
+    these can’t be configured unless a file is open, so you’ll start with that 
+    step.</font></p>
+    <ol>
+      <li><font face="Arial">Choose File &gt; Open.</font></li>
+      <li><font face="Arial">In the Open dialog box, navigate to the 
+      Lessons/Lesson17 folder on your hard drive.</font></li>
+      <li><font face="Arial">Select the 17Start.psd file and click Open.</font></li>
+      <li><font face="Arial">If necessary, resize the image window and zoom in 
+      or out so that you can see the entire image.</font></li>
+      <li><font face="Arial">Examine the View menu and submenus to make sure 
+      that the following commands are selected (checked), or select them now.<br>
+      • Extras<br>
+      • Snap<br>
+      • Guides and Slices on the Snap To submenu<br>
+      • Guides and Slices on the Show submenu</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">3</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating a rollover with warped text</b></font><p>
+    <font face="Arial">One of the fun things ImageReady can do with text is to 
+    warp the font shape. For example, you can make the words appear as they 
+    might look if they were painted on a three-dimensional object.<br>
+    You’ll combine that applied warping with a rollover state. As a result, the 
+    warped text will appear on the final HTML image only in response to specific 
+    user actions.</font></p>
+    <ol>
+      <li><font face="Arial">Select the Slice tool , and drag a rectangle around 
+      the words “Museo Arte,” using the guides as a reference so that the slice 
+      borders snap to them.</font></li>
+      <li><font face="Arial">In the Web Content palette, double-click the 
+      automatically assigned name of the user slice (17Start_02) to activate it. 
+      Type Museo Arte to rename it, and press Enter (Windows) or Return (Mac 
+      OS).</font></li>
+      <li><font face="Arial">Select the Create Rollover State button . A new 
+      Over state rollover appears nested below the Museo Arte slice in the Web 
+      Content palette.</font></li>
+      <li><font face="Arial">In the Layers palette, select the Museo Arte layer.</font></li>
+      <li><font face="Arial">In the toolbox, select the Type tool&nbsp; to 
+      display the text options in the tool options bar, and click the Create 
+      Warped Text button .<br>
+      Note: You do not need to use the Type tool or select the text. The warping 
+      effect always applies to the entire text layer, not individual words or 
+      characters.</font></li>
+      <li><font face="Arial">Select Fisheye in the Style pop-up menu, and drag 
+      the Bend slider to 30%. Leave the Vertical and Horizontal Distortion 
+      sliders at 0%, and click OK. Notice the distortion of the Museo Arte text.</font></li>
+      <li><font face="Arial">In the Web Content palette, click Normal to 
+      deactivate the rollover-state display in the image window.</font></li>
+    </ol>
+    <p><font face="Arial">Note: Warping text is not the same as placing type on 
+    a path, which is a feature you can use in Photoshop. For information on how 
+    to arrange characters on geometric or freeform paths, see Photoshop Help. 
+    (This feature is not available in ImageReady.)</font></td>
+    <td align="center" width="32"><font face="Arial">4</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Previewing a rollover</b></font><p>
+    <font face="Arial">Although the end result of this project is a Web page, 
+    you can test the interactive behaviors of your slices in ImageReady. You do 
+    this by stepping out of working mode into preview mode. While you are 
+    previewing, some palettes, such as the Layers palette, are dimmed because 
+    you cannot select layers or make adjustments in those palettes in preview 
+    mode.</font></p>
+    <ol>
+      <li><font face="Arial">In the Layers palette, click a blank area to 
+      deselect the Museo Arte layer.</font></li>
+      <li><font face="Arial">In the toolbox, first select the Toggle Slices 
+      Visibility button&nbsp; or press Q to hide the slice boundaries and remove 
+      the ghosting appearance over the image.</font></li>
+      <li><font face="Arial">Select the Preview Document button&nbsp; or press Y 
+      to activate preview mode.<br>
+      Note: The guides are still visible in the image window. You can either 
+      ignore them as you preview or hide them by choosing View &gt; Show &gt; Guides, 
+      or with the keyboard shortcut using the semicolon key: Ctrl+; (Windows) or 
+      Command+; (Mac OS&gt;. If you hide them now, be sure that you make them 
+      visible again after you finish previewing, because you’ll need them for 
+      the next topic.</font></li>
+      <li><font face="Arial">Move the pointer over the Museo Arte text in the 
+      image window, and then move it away so that you can see the effect of the 
+      Over rollover state with the Warped Text applied.<br>
+      Notice the effect the pointer position has on the highlighting in the Web 
+      Content palette.&nbsp; As you move the pointer over and then away from the 
+      Museo Arte slice in the image window, the slice selection in the Web 
+      Content palette shifts from Normal to the Museo Arte Over state.</font></li>
+      <li><font face="Arial">Click the Preview Document and Toggle Slices 
+      Visibility buttons again to deactivate them, or press Q and Y to use the 
+      keyboard shortcuts.&nbsp; The slice boundaries and the ghosted overlay 
+      reappear in the image window.</font></li>
+      <li><font face="Arial">In the Web Content palette, select Normal, and 
+      click the arrow on the Museo Arte slice to hide the rollover listing.</font></li>
+    </ol>
+    <p><font face="Arial">Try to keep the Web Content and Layers palettes as 
+    organized and tidy as possible for your rollover work. By avoiding visual 
+    clutter, you’ll make fewer mistakes, do less scrolling, and be able to find 
+    and focus on the next item in the palette that requires your attention. In 
+    this lesson, we’ll frequently remind you to collapse grouped items when you 
+    finish working with them, even though this doesn’t affect the end result of 
+    the lesson.</font></td>
+    <td align="center" width="32"><font face="Arial">5</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating and dividing a slice and making a table</b></font><p>
+    <font face="Arial">Slices are essentially the cells of an HTML table. You 
+    can use the improved tables features and new Table palette in ImageReady CS 
+    to create tables nested within the overall HTML table for your page. This 
+    produces a cleaner, more manageable HTML code and makes it easier for you to 
+    work with the table slices.</font></p>
+    <ol>
+      <li><font face="Arial">Select the Slice tool&nbsp; in the toolbox.</font></li>
+      <li><font face="Arial">Drag to create a new slice, beginning at the 
+      intersection of the vertical and horizontal guides just above the “About 
+      Museo Arte” text and ending where the guide just below the “Contact” text 
+      meets the left edge of the document.</font></li>
+      <li><font face="Arial">Choose View &gt; Show &gt; Guides to remove the check 
+      mark and hide the guides.</font></li>
+      <li><font face="Arial">Choose Slices &gt; Divide Slice to open the Divide 
+      Slice dialog box.</font></li>
+      <li><font face="Arial">Under Divide Slice Horizontally Into, type 5 in the 
+      Slices Down, Evenly Spaced option.&nbsp; Then click OK.</font></li>
+      <li><font face="Arial">With the five new slices still selected, click the 
+      Group Slices Into Table button at the bottom of the Web Content palette.</font></li>
+    </ol>
+    <p><font face="Arial">Notice that the five slices are now nested under the 
+    new Table 02 in the Web Content palette and that the color of their bounding 
+    boxes has changed in the image window, indicating that they are a table. The 
+    Museo Arte slice remains outside the table.</font></td>
+    <td align="center" width="32"><font face="Arial">6</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Renaming and rearranging slices</b></font><p>
+    <font face="Arial">As you’ve probably already guessed, you can change the 
+    order of the slices in the Web Content palette in the same way you change 
+    the arrangement of layers in the Layers palette. This includes rearranging 
+    slices within a defined table, like the one you just created for the menu 
+    panel in the image.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, double-click the 
+      Table_02 name to activate it and type Menu Slices to rename it, and then 
+      press Enter (Windows) or Return (Mac OS).</font></li>
+      <li><font face="Arial">Select the first cell (slice) nested under the Menu 
+      Slices table, and notice that a differently colored selection border 
+      appears around the Contact button.</font></li>
+      <li><font face="Arial">Double-click the selected slice name, type Contact 
+      to rename it, and press Enter (Windows) or Return (Mac OS).</font></li>
+      <li><font face="Arial">Using the same technique, rename the remaining four 
+      slices in the table, typing Members, Exhibits, Tour, or About 
+      corresponding to the text enclosed in the selected slice.</font></li>
+      <li><font face="Arial">Select the About slice in the table and drag it to 
+      the top of the table under Nested Slices, being careful to keep the slice 
+      indented. (Otherwise, you will remove the slice from the table.)</font></li>
+      <li><font face="Arial">Select and drag the other slices so that their 
+      order in the table in the Web Content palette matches the order seen in 
+      the image window and in the second illustration below: About, Tour, 
+      Exhibits, Members, and Contact. Dragging a slice Final order of the table 
+      slices</font></li>
+      <li><font face="Arial">Click Normal.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">7</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating rollovers affecting layer visibility</b></font><p>
+    <font face="Arial">Perhaps one of the most common methods of animating a 
+    file is to change the visibility of different layers.<br>
+    In this design, the original version of the central image was fully colored 
+    instead of the heavily blue-toned version that you see in Normal state. 
+    Sections of the original version have been copied onto layers in this file, 
+    above the blue-version Background layer. The<br>
+    original-color sections line up perfectly with the blue image, so making 
+    them visible appears to brighten just that area of the image by removing the 
+    blue color cast.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, select the About slice, 
+      and then click the Create Rollover State&nbsp; button at the bottom of the 
+      palette to create a new Over state for that slice.</font></li>
+      <li><font face="Arial">In the Layers palette, expand the Menu Color Bkgds 
+      layer set, and click the visibility box to set an eye icon&nbsp; by the 
+      Cell 1 layer.<br>
+      The background behind the About Museo Arte text is now more brightly 
+      colored.</font></li>
+      <li><font face="Arial">In the Web Content palette, click Normal, and click 
+      the arrow by the About slice to collapse its contents.<br>
+      The eye icon disappears from the Cell 1 layer, and the About button in the 
+      image window returns to its monochromatic blue coloring.</font></li>
+      <li><font face="Arial">Using the same process as Steps 1–2, create 
+      rollover states for each of the remaining four table slices:<br>
+      • Select the Tour slice, create a new rollover, and make the Cell 2 layer 
+      visible.<br>
+      • Select the Exhibits slice, create a new rollover, and make the Cell 3 
+      layer visible.<br>
+      • Select the Members slice, create a new rollover, and make the Cell 4 
+      layer visible.<br>
+      • Select the Contact slice, create a new rollover, and make the Cell 5 
+      layer visible.</font></li>
+      <li><font face="Arial">Hide all the rollover-state listings for the slices 
+      by clicking the arrow for each slice.</font></li>
+      <li><font face="Arial">In the Layers palette, collapse the Menu Colored 
+      Bkgds layer set.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">8</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Previewing layer-visibility rollovers</b></font><ol>
+      <li><font face="Arial">Click a blank area of the Layers palette to ensure 
+      that no layers are selected. Then select the Preview Document button&nbsp; 
+      in the toolbox.<br>
+      Note: Do not select the Toggle Slices Visibility button this time, so that 
+      the slice boundariesand symbol boxes remain visible as you preview.</font></li>
+      <li><font face="Arial">Slowly move the pointer up and down over the 
+      different buttons in the table and notice the following:<br>
+      • The changes in background coloring as the pointer moves over the 
+      different button areas.<br>
+      • The Active Slice badge&nbsp; that appears in the symbol sets in the 
+      image window and slice listings in the Web Content palette, and also in 
+      the boxes next to the slice visibility symbols.</font></li>
+      <li><font face="Arial">Click the Preview Document button again to 
+      deactivate it.</font></li>
+      <li><font face="Arial">Choose File &gt; Save to save your work.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">9</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating another rollover state using layer styles</b></font><p>
+    <font face="Arial">All the rollovers you’ve created so far are Over states, 
+    which affect the appearance of the image when the pointer moves over the 
+    slice. Several other kinds of mouse actions can trigger rollover states. You 
+    can assign more than one rollover state to an individual slice, so that 
+    different things occur on-screen depending on what the user does, such as 
+    point to, click, or select a particular slice.</font></p>
+    <ol>
+      <li><font face="Arial">In the Layers palette, click the arrow to expand 
+      the Button Text layer set. If necessary, click the arrow to expand the 
+      “About Museo Arte” text layer within that set, so that you can see the 
+      effects nested below that layer.</font></li>
+      <li><font face="Arial">In the Web Content palette, select the About slice 
+      in the Menu Slices table.</font></li>
+      <li><font face="Arial">Select the Create Rollover State button at the 
+      bottom of the palette. The new rollover is labeled Down and is selected.</font></li>
+      <li><font face="Arial">Double-click the new Down rollover to open the 
+      Rollover State Options dialog box.</font></li>
+      <li><font face="Arial">Select the Click option, and then click OK to close 
+      the dialog box.</font></li>
+      <li><font face="Arial">In the Layers palette, click the box to set an eye 
+      icon for Effects under the “About Museo Arte” text layer.<br>
+      A slight yellow glow surrounds the words About Museo Arte in the image.</font></li>
+      <li><font face="Arial">Click the Normal state at the top of the Web 
+      Content palette and then collapse the About slice to hide the rollover 
+      listing. Then, in the Layers palette, collapse the “About Museo Arte” 
+      layer to hide the Effects listing.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">10</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Finishing the remaining buttons and previewing the 
+    rollovers</b></font><p><font face="Arial">Again, it’s always a good idea to 
+    test your rollovers in preview mode before you go on. </font></p>
+    <ol>
+      <li><font face="Arial">Using the procedure you followed in the previous 
+      topic (“Creating another rollover state using layer styles” on page 569), 
+      create Click rollover states for the other four slices in the Menu Slices 
+      table. When you finish, the Tour text will glow when the user clicks the<br>
+      Tour button, the Exhibits text will glow when the user clicks the Exhibits 
+      button, and so forth.</font></li>
+      <li><font face="Arial">In the Layers palette, click the arrow to collapse 
+      the Button Text layer set, and then click a blank area of the Layers 
+      palette to deselect all layers.</font></li>
+      <li><font face="Arial">Select Normal in the Web Content palette.</font></li>
+      <li><font face="Arial">In the toolbox, select the Toggle Slices Visibility 
+      button&nbsp; and then the Preview Document button .</font></li>
+      <li><font face="Arial">Slowly move the pointer over the image window, 
+      concentrating on the changes to the colored background in the Over states.</font></li>
+      <li><font face="Arial">Click individual buttons, and notice the glow that 
+      remains visible on the letters until you move the pointer off the button 
+      area.<br>
+      Also notice that after you click, the more brightly colored background 
+      disappears, leaving the regular darker-toned background for the button.</font></li>
+      <li><font face="Arial">Click the Toggle Slices Visibility button and 
+      Preview Document button again to return to normal work mode.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">11</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Preparing to do more rollover work</b></font><p>
+    <font face="Arial">You can create sets for slices, just as you can for 
+    layers. Slice sets tidy up the list in the Web Content palette, helping you 
+    navigate quickly and accurately through the complexity of a sophisticated 
+    collection of slices and rollovers.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, make sure that Normal 
+      is the selected state or select it now, and then select the New Slice Set&nbsp; 
+      button at the bottom of the palette.</font></li>
+      <li><font face="Arial">Double-click the new slice set name (Slice Set 1) 
+      to activate it, and type Info Slices to rename it. Then press Enter 
+      (Windows) or Return (Mac OS). Leave the Info Slices set selected in the 
+      Web Content palette.</font></li>
+      <li><font face="Arial">In the Layers palette, do the following:<br>
+      • Click the arrow for the Info Panels layer set to expand it.<br>
+      • Select the Exhibit_info layer.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">12</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Adding new slices to a slice set</b></font><p>
+    <font face="Arial">You can always drag slices in and out of a slice set in 
+    the Web Content palette, just as you can drag layers in and out of layer 
+    sets or layer groups in the Layers palette. But if you plan ahead, you can 
+    save yourself the trouble by automatically placing new slices inside a 
+    specific slice set as you create them. This topic shows you how.</font></p>
+    <ol>
+      <li><font face="Arial">In the Layers palette, click to set an eye icon&nbsp; 
+      for the Exhibit_info layer in the Info Panels layer set so that the 
+      “Spanish Master” graphic is visible in the image window.&nbsp; The layer 
+      becomes visible in the image window.</font></li>
+      <li><font face="Arial">Choose Select &gt; Load Selection &gt;Exhibit_info 
+      Transparency. The animated selection border shows that the layer is now 
+      selected.</font></li>
+      <li><font face="Arial">Choose Select &gt; Create Slice From Selection.<br>
+      A solid-colored border indicates that the layer is now also a slice, but 
+      the selection border is also visible.</font></li>
+      <li><font face="Arial">Choose Select &gt; Deselect, or press Ctrl+D (Windows) 
+      or Command+D (Mac OS).</font></li>
+      <li><font face="Arial">In the Web Control palette, expand the Info Slices 
+      slice set by clicking the arrow by its name.<br>
+      Because Info Slices was selected in the Web Content palette when you 
+      created the slice, the new slice appears nested inside that slice set.</font></li>
+      <li><font face="Arial">Double-click the new slice name (17Start_11) and 
+      type Exhibit Info to rename it. Press Enter (Windows) or Return (Mac OS).</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">13</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Troubleshooting rollover behaviors</b></font><p>
+    <font face="Arial">Creating rollovers requires meticulous attention to 
+    detail in an environment that can be crowded with alternatives. One of the 
+    more common mistakes occurs when you unintentionally alter the Normal state.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, select Normal.<br>
+      Notice that the previous procedure has created a problem: The Exhibit_info 
+      layer is now visible in Normal state. Fortunately, that’s easy to correct.</font></li>
+      <li><font face="Arial">With Normal state still selected, click the eye 
+      icon&nbsp; in the Layers palette for the Exhibits Info layer to hide the 
+      layer.</font></li>
+      <li><font face="Arial">Test that this corrected the problem by selecting a 
+      rollover state in any of the slices (you will have to expand the slice to 
+      reveal the hidden rollovers), and then clicking Normal again.</font></li>
+    </ol>
+    <p><font face="Arial">Now the image appears correctly, as it did before you 
+    assigned any rollovers.</font></td>
+    <td align="center" width="32"><font face="Arial">14</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating a slice from a hidden layer </b></font>
+    <p><font face="Arial">In this procedure, you’ll create a slice from the 
+    Member_info layer just like the one you created for the Exhibits Info 
+    slice—but with a more efficient technique. You can create the slice from a 
+    layer that isn’t even visible. Because this doesn’t alter the view in Normal 
+    state, this makes it unnecessary to go back and fix the Normal state when 
+    you finish.</font></p>
+    <ol>
+      <li><font face="Arial">In the Layers palette, select the Members_info 
+      layer but do not click the eye icon to make it visible.</font></li>
+      <li><font face="Arial">In the Web Content palette, select the Info Slices 
+      slice set. </font></li>
+      <li><font face="Arial">Choose Select &gt; Load Selection &gt; Members_info 
+      Transparency.<br>
+      In the center of the image window, the animated selection border around 
+      the unseen layer boundaries confirms that the layer is selected, even 
+      though you can’t see any change in the art itself.</font></li>
+      <li><font face="Arial">Choose Select &gt; Create Slice From Selection. </font>
+      </li>
+      <li><font face="Arial">Choose Select &gt; Deselect, or press Ctrl+D (Windows) 
+      or Command+D (Mac OS) to deselect the layer but not the slice.</font></li>
+      <li><font face="Arial">In the Web Content palette, double-click the new 
+      slice name (17Start_14) and type Members Info to rename the slice. Press 
+      Enter (Windows) or Return (Mac OS).</font></li>
+      <li><font face="Arial">Click Normal.</font></li>
+    </ol>
+    <p><font face="Arial">Because you did not make the Member_info layer visible 
+    during this procedure, the Normal state is still as it was and there is no 
+    need to correct it as you had to do for the Exhibit Info slice.</font></td>
+    <td align="center" width="32"><font face="Arial">15</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Creating remote rollovers</b></font><p>
+    <font face="Arial">A remote rollover is the association of one slice with 
+    another one so that an action in one slice affects the visibility or effects 
+    in the other slice.<br>
+    For remote slices, it is not enough to change the visibility settings in the 
+    Layers palette for the remote slice. You must also create the relationship 
+    between the two slices. Fortunately, the pickwick&nbsp; feature makes it 
+    easy and intuitive to accomplish this part.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, do the following:<br>
+      • In the Menu Slices table, expand the Exhibits and Members slices so that 
+      you can see the Over and Click rollover states nested under each of those 
+      slices.<br>
+      • Select the Click rollover state for the Exhibits slice.</font></li>
+      <li><font face="Arial">In the Layers palette, select the Exhibit_info 
+      layer and click the visibility box to set an eye icon&nbsp; for that 
+      layer.</font></li>
+      <li><font face="Arial">In the Web Content palette, drag the pickwick&nbsp; 
+      from the Click rollover state of the Exhibits slice to the Exhibit_info 
+      layer in the image window, so that the slice boundary is highlighted by a 
+      dark border.<br>
+      When you release the mouse button, notice the new badge&nbsp; in the 
+      symbol sets for the Exhibits slice in the image window and Web Content 
+      palette. Also notice the badge next to the Exhibit Info slice.<br>
+      Note: Instead of dragging the pickwick to the target slice in the image 
+      window, you can drag it to that slice in the Web Content palette. The 
+      result is the same with either method.</font></li>
+      <li><font face="Arial">Select Normal in the Web Content palette, and click 
+      the arrow on the Exhibits slice to collapse the rollovers nested below it.</font></li>
+      <li><font face="Arial">Select the Click rollover state for the Members 
+      slice.</font></li>
+      <li><font face="Arial">Repeat Steps 2–4 but use the Members Info slice as 
+      the target for the remote rollover:<br>
+      Make that layer visible and then drag the pickwick from the Click state to 
+      the “Members Discount” image. Be careful to select Normal at the end of 
+      the process.</font></li>
+      <li><font face="Arial">In the Layers palette, click the arrow to collapse 
+      the Info Panels layer set.</font></li>
+    </ol>
+    <p><font face="Arial">If you accidentally release the pickwick at the wrong 
+    slice or decide later that you don’t want to use the remote rollover at all, 
+    you can remove it. To do this, select the rollover state you want to edit, 
+    such as an Over or Down state nested under the triggering layer. Then find 
+    the Remote badge&nbsp; between the eye icon and the name of the target slice 
+    in the Web Content palette. Click that Remote badge to delete it, which 
+    removes the remote rollover relationship.</font></td>
+    <td align="center" width="32"><font face="Arial">16</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Previewing rollovers to detect problems</b></font><p>
+    <font face="Arial">Catching errors isn’t the only reason for testing 
+    rollovers. Sometimes unanticipated results occur that require additional 
+    adjustments, especially when you’re just learning how to work with 
+    rollovers.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, expand the Exhibits and 
+      Members slices in the Menu Buttons slice set so that you can see the 
+      rollover states nested below them.</font></li>
+      <li><font face="Arial">One at a time, select the two Click rollover states 
+      and notice the results in the image window. Pay particular attention to 
+      the partially transparent, dark halo effect that appears around the Info 
+      Panels layer art.</font></li>
+      <li><font face="Arial">Click a blank area of the Layers palette to 
+      deselect all layers and select Normal in the Web Content palette.</font></li>
+      <li><font face="Arial">In the toolbox, select the Toggle Slices Visibility 
+      button&nbsp; and then the Preview Document button.</font></li>
+      <li><font face="Arial">Move the pointer over the image window, and click 
+      the Exhibit button. Allow the pointer to remain inside that navigation 
+      button so that you can examine the information panel that appears. Notice 
+      that the shadowy halo around the panel does not appear.</font></li>
+      <li><font face="Arial">Click the Members button and confirm that the same 
+      phenomenon occurs for that information panel.</font></li>
+      <li><font face="Arial">Click the Toggle Slices Visibility button and 
+      Preview Document button again to return to normal work mode.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">17</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Resizing slices to correct visibility problems</b></font><p>
+    <font face="Arial">In order to correct the view of the information panels so 
+    that the user can see the shadow layer style applied to them, you must make 
+    those layers visible as a reference. After you make the correction, you need 
+    to make them invisible again so that you don’t change<br>
+    Normal state.</font></p>
+    <ol>
+      <li><font face="Arial">In the Web Content palette, select the Click state 
+      for the Exhibits slice.</font></li>
+      <li><font face="Arial">In the toolbox, select the Slice Select tool&nbsp; 
+      and click the Exhibit Info slice in the image window. (If you hid the 
+      Guides earlier, choose View &gt; Show &gt; Guides to make them visible.)</font></li>
+      <li><font face="Arial">Select one of the corner anchor points on the upper 
+      slice boundary and drag it up and away from the center of the layer art 
+      until it completely surrounds the gradient dark shadow around the top and 
+      side of the art.<br>
+      Note: You can drag the slice borders to the horizontal guides above and 
+      below the central third of the image because there are no other slices in 
+      that area. This is not necessary, but it reduces the number of auto slices 
+      required to completely divide up the image. If there were other user 
+      slices in the same area, overlapping their edges would block one slice or 
+      the other and create unwanted results.</font></li>
+      <li><font face="Arial">Select the anchor point on the opposite corner of 
+      the slice and drag down and away from the center so that the slice 
+      encloses all the shadow on those sides.</font></li>
+      <li><font face="Arial">In the Web Content palette, select the Click state 
+      of the Members slice. Then, repeat Steps 2–4 so that that slice 
+      encompasses the entire shadowy effect around the Members Info art.</font></li>
+      <li><font face="Arial">In the Web Content palette, select Normal. In the 
+      Layers palette, click an empty area to ensure that no layers are selected.</font></li>
+      <li><font face="Arial">Use the Toggle Slices Visibility and Preview 
+      Document buttons and preview the image to make sure that changing the 
+      slice dimensions corrected the problem. When you finish, select the 
+      buttons again to return to working mode.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">18</font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><b>Generating a Web page from the image</b></font><p>
+    <font face="Arial">ImageReady does the hard work of converting your 
+    image-file information into a Web page consisting of an HTML file and 
+    supporting folders of files. There is one important step that you must do in 
+    order for the Web page to recognize the rollovers so that they work properly 
+    on the Web page. You’ll do that step first.</font></p>
+    <ol>
+      <li><font face="Arial">Click the arrow to open the Web palette menu, and 
+      choose Find All Remote Slices.</font></li>
+      <li><font face="Arial">When a message appears, reporting the changes that 
+      ImageReady has made to the file, click OK.</font></li>
+      <li><font face="Arial">Choose File &gt; Save Optimized As.</font></li>
+      <li><font face="Arial">In the Save Optimized As dialog box, navigate to 
+      the location in which you want to save the file, or save it in the 
+      Lessons/Lesson17 folder.</font></li>
+      <li><font face="Arial">Leave the file name as it is and then make sure 
+      that the following options are selected:<br>
+      • HTML And Images for Save As Type (Windows) or Format (Mac OS).<br>
+      • Default Settings for the Settings option.<br>
+      • All Slices for the Slices option.</font></li>
+      <li><font face="Arial">Click Save.</font></li>
+      <li><font face="Arial">On the desktop, locate the 17Start.html file you 
+      just generated and open it to view your final results. After you finish 
+      viewing it and testing the rollovers, quit the browser. </font></li>
+    </ol>
+    </td>
+    <td align="center" width="32"><font face="Arial">19</font></td>
+  </tr>
+  <tr>
+    <td><b><font face="Arial">Review Questions</font></b><ol>
+      <li><font face="Arial">Name two common rollover states and the mouse 
+      actions associated with them.</font></li>
+      <li><font face="Arial">How many rollover states can a slice have?</font></li>
+      <li><font face="Arial">Can you create a rollover state for an image map 
+      instead of a slice?</font></li>
+      <li><font face="Arial">What is a remote rollover?</font></li>
+      <li><font face="Arial">Can rollovers do more than cause changes in 
+      appearance?</font></li>
+    </ol>
+    <p><b><font face="Arial">Review Answers</font></b></p>
+    <ol>
+      <li><font face="Arial">Normal and Over are probably the two most common 
+      rollover states. Normal is the default appearance of the Web page, as it 
+      opens and before the user performs any mouse actions. Over is the state 
+      when the pointer tip is within the defined area but without the user 
+      pressing the mouse button in any way. There are a total of eight different 
+      rollover states you can create in ImageReady, if you count Custom and 
+      None. However, since you can create your own Custom states, there are 
+      innumerable other possibilities.</font></li>
+      <li><font face="Arial">A slice can have multiple rollover states, but only 
+      one of each type. For example, a slice could not have two different Over 
+      states, but one Over state could trigger multiple changes in the slice and 
+      also in one or more remote slices. Because these different states<br>
+      are associated with different mouse actions, there is no conflict and no 
+      reason why they cannot coexist.</font></li>
+      <li><font face="Arial">Yes, certainly! You can make the same kinds of 
+      changes in layer visibility, position, or effects that you can make with 
+      slices, just as you can link both slices and image maps to URLs.</font></li>
+      <li><font face="Arial">A remote rollover is when a mouse action taking 
+      place in one slice affects the appearance of another slice in the image. 
+      These have sometimes been called secondary rollovers.</font></li>
+      <li><font face="Arial">Yes. Properly set up, you can use remote rollovers 
+      to do other things, such as launch an application or run an animation. For 
+      more information, see ImageReady Help.</font></li>
+    </ol>
+    </td>
+    <td align="center" width="32">&nbsp;</td>
+  </tr>
+  </table>
+
+</body>
+
+</html>
